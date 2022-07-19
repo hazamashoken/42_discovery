@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basics</title>
+    <style>
+        .pink {
+            background-color: pink;
+        }
+
+        .white {
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            height: 450px;
+        }
+
+        .center {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blink {
+            animation: blink 0.5s infinite;
+        }
+
+        footer {
+            font-family: monospace;
+            font-style: italic;
+            text-align: right;
+            height: 100px;
+        }
+
+        @keyframes blink {
+            0% {
+                color: red;
+                transform: rotate(1deg);
+            }
+
+            10% {
+                color: blue;
+                transform: rotate(2deg);
+            }
+            20% {
+                color: red;
+                transform: rotate(3deg);
+            }
+            30% {
+                color: blue;
+                transform: rotate(4deg);
+            }
+
+            40% {
+                color: green;
+                transform: rotate(5deg);
+            }
+
+            50% {
+                color: white;
+                transform: rotate(-1deg);
+            }
+            60% {
+                color: red;
+                transform: rotate(-2deg);
+            }
+            70% {
+                color: yellow;
+                transform: rotate(-3deg);
+            }
+            80% {
+                color: green;
+                transform: rotate(-4deg);
+            }
+            90% {
+                color: yellow;
+                transform: rotate(-5deg);
+            }
+
+            100% {
+                color: white;
+                transform: rotate(4deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="pink">
+    <h1 class="white blink">-42 Error Norm not found!-</h1>
+    <div class="center">
+        <div>
+            <img src="https://www.42bangkok.com/wp-content/uploads/2021/04/42souvernirs-hood.jpg">
+            <a href="https://www.42bangkok.com/">
+                <h2 class="blink">Click Me</h2>
+            </a>
+        </div>
+        <div>
+            <img
+                src="https://www.matichonweekly.com/wp-content/uploads/2022/02/%E0%B8%9A%E0%B8%A3%E0%B8%A3%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87-42-Bangkok-%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%81%E0%B8%A3%E0%B8%81-1.jpg">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <h2 class="blink">Click Me</h2>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <h4>© tliangso 2022</h4>
+    </footer>
+</body>
+
+</html>

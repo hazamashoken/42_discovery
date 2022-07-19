@@ -1,0 +1,27 @@
+body, html {
+    height: 100%
+}
+
+.top {
+    background-image: url("https://i.pinimg.com/originals/6a/98/cb/6a98cb4ae20425cbdc6a03e798948ca6.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mid {
+    background-color: white;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bot {
+    background-image: url("https://149367133.v2.pressablecdn.com/wp-content/uploads/2021/02/rick-astley-never-gonna-give-you-up-4k.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

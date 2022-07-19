@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ballon</title>
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="Ballon">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="thliangs">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+            }
+            .ballon {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: red;
+            }
+        </style>
+        <script>
+            function    change_color(element)
+            {
+                if(element.style.backgroundColor == "red")
+                {
+                    element.style.backgroundColor = "green";
+                }else if(element.style.backgroundColor == "green")
+                {
+                    element.style.backgroundColor = "blue";
+                }
+                else {
+                    element.style.backgroundColor = "red";
+                }
+                return false;
+            }
+
+            function invert_color(element)
+            {
+                if(element.style.backgroundColor == "blue")
+                {
+                    element.style.backgroundColor = "green";
+                }else if(element.style.backgroundColor == "green")
+                {
+                    element.style.backgroundColor = "red";
+                }
+                else {
+                    element.style.backgroundColor = "blue";
+                }
+                return false;
+            }
+
+            function    expand(element)
+            {
+                change_color(element);
+                if (element.offsetWidth < "420")
+                {
+                    element.style.width = (element.offsetWidth + 10) + "px"; 
+                    element.style.height = (element.offsetHeight + 10) + "px";
+                }
+                else {
+                    document.body.style.backgroundImage = "url('http://www.clker.com/cliparts/W/x/u/N/v/s/balloon-pop-hi.png')"
+                    element.style.width = "200px";
+                    element.style.height = "200px";
+                    element.style.opacity = "0%";
+                    setTimeout(() => {
+                        document.body.style.backgroundImage = 'none';
+                        element.style.opacity = "100%"
+                        element.style.backgroundColor = "red";
+                    }, 300);
+                    sleep(100)
+                }
+            }
+
+            function    shrink(element)
+            {
+                if (element.offsetWidth > "200")
+                {
+                    invert_color(element);
+                    element.style.width = Math.max(200, element.offsetWidth - 5) + "px";
+                    element.style.height = Math.max(200, element.offsetHeight - 5) + "px";
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div class="ballon" onclick="expand(this)" onmouseleave="shrink(this)"></div>
+    </body>
+</html>
