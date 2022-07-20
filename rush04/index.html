@@ -8,23 +8,194 @@
         <meta name="keywords" content="HTML,CSS,JavaScript" />
         <meta name="author" content="thliangs" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="scripts.js"></script>
+        
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> -->
+        <link href="style.css" rel="stylesheet">
+        
     </head>
     <body>
-        <div class="parallax" style="background-image: url('img/header-background.jpg');">
-
+        <div id="mobile-menu-open" class="shadow-large">
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <div class="parallax" style="background-image: url('img/background_2.webp');">
-            
+        <header>
+            <div id="mobile-menu-close">
+                <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <ul id="menu" class="shadow">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </header>
+    
+        <div id="lead" class="parallax">
+            <div id="lead-content">
+                <h1>Thanapol Liangsoonthornsit</h1>
+                <h2>Hobbyist Programmer</h2>
+                <a target="_blank" href="https://drive.google.com/file/d/1HAbtDkIcZewXIL5ARwteOahmbHGUWis4/view?usp=sharing" class="btn-rounded">Download Resume</a>
+            </div>
+    
+            <div id="lead-overlay"></div>
+    
+            <div id="lead-down">
+                <span>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </span>
+            </div>
         </div>
-        <div class="parallax" style="background-image: url('img/background_3.png');">
-            
+    
+        <div id="about" class="parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="heading">About Me</h2>
+                        <img src="https://hazamashoken.github.io/images/profilepic.jpg" class="profile-pic" /> 
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            I'm a Singapore based Hobbyist Programmer. Currently a student at PSB Academy and a Cadet at 42 Ecole Bangkok. I like to slap my keyboard until everything works. 
+                            Currently looking to explore a new way to implement ideas in to reality with code.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+    
+        <div id="education" class="parallax">
+            <h2 class="heading">Education</h2>
+            <div class="education-block">
+                <h3>Ngee Ann Polytechnic</h3>
+                <span class="education-date">April 2017 - Sept 2021</span>
+                <h4>Diploma in Automation and Mechatronic System</h4>
+            </div>
+    
+            <div class="education-block">
+                <h3>PSB Academy</h3>
+                <span class="education-date">June 2022 - Present</span>
+                <h4>Diploma in Inforcommunication and Teachnology</h4>
+            </div>
+        </div>
+    
+        <div id="projects" class="background-alt">
+            <h2 class="heading">Projects</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="img/project2.png" />
+                        </div>
+                        <div class="project-info">
+                            <h3>Porfolio Website using html/css/js/jQuerry</h3>
+                            <p>
+                                Coding Porfolio website using html/css/js/jQuerry during 42 coding bootcamp for website development.
+                            </p>
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+    
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="img/project1.png" />
+                        </div>
+                        <div class="project-info">
+                            <h3>Porfolio Website using html/css/js/React.js</h3>
+                            <p>
+                                My personal github.io website hosted on github. Code with React framework as a single page application.
+                            </p>
+                            <a href="https://hazamashoken.github.io/">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="skills">
+            <h2 class="heading">Skills</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>Python3</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>html</li>
+                <li>Jquery.js</li>
+                <li>CSS</li>
+                <li>SQL</li>
+                <li>Kolin</li>
+                <li>GIT</li>
+                <li>PHP</li>
+                <li>Shell</li>
+            </ul>
+        </div>
+    
+        <div id="contact">
+            <h2>Get in Touch</h2>
+            <div id="contact-form">
+                <form method="POST" action="https://formspree.io/f/mknydrbo">
+                    <input type="hidden" name="_subject" value="Contact request from personal website" />
+                    <input type="email" name="_replyto" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Your message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 copyright">
+                        <p>
+                            Copyright &copy; <span id="current-year">2022</span> Thanapol Liangsoonthornsit
+                        </p>
+                    </div>
+                    <div class="col-sm-2 top">
+                        <a href="#">
+                            <span id="to-top">
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-sm-5 social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/hazamashoken/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://stackoverflow.com/users/19344322/hazamashoken/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/thanapol-liangsoonthornsit-423a67168/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/earth.backtrack/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/backtrackearth" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
     </body>
-    <footer>
-
-    </footer>
 </html>
