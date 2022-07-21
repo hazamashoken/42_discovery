@@ -227,6 +227,7 @@ footer {
     border-radius: 30px;
     text-decoration: none;
     transition: transform 200ms ease-in-out;
+    user-select: none;
 }
 
 .btn-rounded:hover {

@@ -23,6 +23,15 @@ $(document).ready(function() {
 
     });
 
+    var options = {
+    strings: ['Hobbyist Programmer', 'Part-time Gamer', 'Dreamer'],
+    typeSpeed: 200,
+    backSpeed: 100,
+    loop: true
+    };
+
+    var typed = new Typed('.typing', options);
+
     $('#view-more-projects').click(function(e){
         e.preventDefault();
         $(this).fadeOut(300, function() {
@@ -32,3 +41,4 @@ $(document).ready(function() {
 
     $("#current-year").text(new Date().getFullYear());
 })
+
