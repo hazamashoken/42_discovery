@@ -23,8 +23,6 @@ body {
     z-index: -1;
 }
 
-
-
 .no_js > div {
     background: var(--background);
     padding: 10px;
@@ -67,12 +65,12 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 10;
+    z-index: 999;
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
