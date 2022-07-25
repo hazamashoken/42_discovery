@@ -11,6 +11,7 @@
     --lead-img: url("/img/background_2.webp");
     --profile-pic-img: url();
     --about-img: url("/img/header-background.jpg");
+    --skill-img: url("/img/background_3.png");
 
 }
 
@@ -92,41 +93,6 @@ header .sticky {
 
 #menu .active{
     display: block;
-}
-
-#mobile-menu-open {
-    display: none;
-    cursor: pointer;
-    position: fixed;
-    right: 15px;
-    top: 10px;
-    color: var(--base-color);
-    font-size: 1.5em;
-    z-index: 20;
-    padding: 0 7px;
-    border-radius: 4px;
-    background: var(--background);
-}
-
-#mobile-menu-close {
-    display: none;
-    text-align: right;
-    width: 100%;
-    background: var(00background);
-    font-size: 1.5em;
-    padding-right: 15px;
-    padding-top: 10px;
-    cursor: pointer;
-    color: var(--base-color);
-}
-
-#mobile-menu-close span {
-    font-size: 0.5em;
-    text-transform: uppercase;
-}
-
-#mobile-menu-close  i {
-    vertical-align: middle;
 }
 
 footer {
@@ -474,6 +440,8 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    background-image: var(--skill-img);
+    background-size: cover;
 }
 #skills h2 {
     color: var(--heading);
