@@ -23,38 +23,6 @@ body {
     z-index: -1;
 }
 
-.no_js > div {
-    background: var(--background);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid var(--border);
-}
-.no_js > h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-    color: var(--heading);
-    display: inline-block;
-    margin: 0;
-}
-
-.no_js > h4 {
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #7e8890;
-    margin: 0 0 15px 0;
-}
-
-.no_js > p {
-    color: --text;
-    font-size: 0.9em;
-    margin: 0;
-}
-
-
-.no_js > :before, .no_js > :after {
-    content: none;
-}
-
 @keyframes dropHeader {
     0% {
         transform: translateY(-100%);
@@ -384,107 +352,6 @@ footer {
     margin: 0;
 }
 
-#experience {
-    padding: 50px 15px;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-}
-
-h2 {
-    color: var(--heading);
-}
-
-#experience-timeline {
-    margin: 30px auto 0 auto;
-    position: relative;
-    max-width: 1000px;
-}
-#experience-timeline:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 303px;
-    right: auto;
-    height: 100%;
-    width: 3px;
-    background: var(--base-color);
-    z-index: 0;
-}
-
-#experience-timeline:after {
-    position: absolute;
-    content: '';
-    width: 3px;
-    height: 40px;
-    background: var(--base-color);
-    background: linear-gradient(to bottom, var(--base-color), rgba(var(--base-color), 0));
-    top: 100%;
-    left: 303px;
-}
-
-.vtimeline-content {
-    margin-left: 350px;
-    background: #fff;
-    border: 1px solid #e6e6e6;
-    padding: 15px;
-    border-radius: 3px;
-    text-align: left;
-}
-.vtimeline-content h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-    color: var(--heading);
-    display: inline-block;
-    margin: 0;
-}
-
-.vtimeline-content h4 {
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #7e8890;
-    margin: 0 0 15px 0;
-}
-
-.vtimeline-content p {
-    color: var(--text);
-    font-size: 0.9em;
-    margin: 0;
-}
-
-.vtimeline-point {
-    position: relative;
-    display: block;
-    margin-bottom: 30px;
-}
-
-.vtimeline-icon {
-    position: relative;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    background: var(--base-color);
-    border-radius: 50%;
-    float: left;
-    z-index: 99;
-    margin-left: 280px;
-}
-.vtimeline-icon i {
-    display: block;
-    font-size: 2em;
-    margin-top: 10px;
-}
-
-.vtimeline-date {
-    width: 260px;
-    text-align: right;
-    position: absolute;
-    left: 0;
-    top: 10px;
-    font-weight: 300;
-    color: #374054;
-}
-
 #education {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid var(--border);
@@ -692,48 +559,6 @@ h2 {
 
 #contact-form button:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-.optional-section {
-    padding: 50px 15px;
-    text-align: center;
-    border-top: 1px solid var(--border);
-}
-
-.optional-section h2 {
-    color: var(--heading);
-}
-
-.optional-section-block {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    border: 1px solid var(--border);
-    background: #fff;
-    text-align: left;
-}
-
-.optional-section-block h3 {
-    font-weight: 500;
-    margin: 0 0 15px 0;
-    color: var(--heading);
-}
-
-.optional-section-block h4 {
-    color: var(--text);
-    clear: both;
-    font-weight: 500;
-    margin: 0 0 15px 0;
-}
-
-.optional-section-block p, .optional-section-block ul {
-    margin: 0 0 15px 0;
-    color: var(--text);
-    font-size: 0.9em;
-}
-
-.optional-section-block ul {
-    padding: 0 0 0 15px;
 }
 
 .parallax {
